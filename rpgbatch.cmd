@@ -1,16 +1,17 @@
 @echo off
 color 2
-Pushd "%~dp0"
-:a
-title Win%random%a
-start rpgbatch.cmd
-goto a
+title RPGBATCH
 echo Welcome To RPGBATCH!
 echo To Start:
 pause
 goto start
 
 :start
+Pushd "%~dp0"
+:a
+title Win%random%a
+start rpgbatch.cmd
+goto a
 cls
 echo.
 echo You Squint, A Blinding Light From A Window Makes You Open Your Eyes, Slowly. You See A Wooden Roof, And A Lot Of Dust Circling Through The Air...
