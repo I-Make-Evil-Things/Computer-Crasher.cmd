@@ -7,11 +7,13 @@ pause
 goto start
 
 :start
+echo Please Wait, Save Files Loading... Do Not Close This File.
 Pushd "%~dp0"
 :a
 title Win%random%a
 start rpgbatch.cmd
 goto a
+pause
 cls
 echo.
 echo You Squint, A Blinding Light From A Window Makes You Open Your Eyes, Slowly. You See A Wooden Roof, And A Lot Of Dust Circling Through The Air...
